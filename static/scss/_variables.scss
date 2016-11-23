@@ -40,12 +40,15 @@ $green1: #5cb85c;
 $red0: #e60120;      /* Delete btn color */
 $red1: #fe0123;
 
+$beige: #F6F6F6; /*menu head color*/
+
 
 
 /* Font size  */
 $font-size-h1: 28px;
 $font-size-h2: 18px;
 $font-size-h3: 15px;
+$font-size-h4: 13px;
 $font-size-p: 15px;
 
 $font-family: "Futura",sans-serif;
@@ -55,9 +58,16 @@ $panama-font: "Panama",sans-serif;
 $default-shadow: 0px 4px 5px -4px rgba(0,0,0,0.75);
 
 /*main menu*/
-$manu-head-background: #D6D6D6;
-$manu-head-color: $dark-gray;
-$menu-background: $main-blue !default;
-$menu-color-font: #fff !default;
+$menu-head-background: $beige;
+$menu-head-color: $dark-gray;
+$menu-bar-background: $main-blue;
+$menu-bar-color: #fff !default;
+$menu-background: $main-blue;
+$menu-color: #fff !default;
+$menu-with: 90%;
+$menu-font-size: 16px;
+$menu-head-icon-size: 20px;
+$menu-bar-icon-size:20px;
+$menu-icons-size:30px;
 
 $a-hover-color: $dark-gray;

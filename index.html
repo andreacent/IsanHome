@@ -11,32 +11,69 @@
     </title>
     <link href="static/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="static/bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/main.css" />
     <link rel="stylesheet" href="static/css/navbar.css" />
   </head>
   <body>
     <header>
-      <div id='menu-head'>
-        <a class='bt-menu' href='#'>
-          menu
-          <i class='fa fa-bars' id='icon-navicon'></i>
-        </a>
+      <div id='menu-bar'>
+        <span class='title'>menu</span>
+        <i class='fa fa-bars' id='icon-navicon'></i>
+        <i class='fa fa-home' id='icon-home-view'></i>
       </div>
       <nav id='main-menu'>
-        <ul id='menu'>
+        <div id='menu-head'>
+          <div id='icon-close-menu'>
+            <i class='fa fa-times'></i>
+          </div>
+          <div class='row' id='house-direction'>
+            <div class='col-xs-4'>
+              <img src='static/images/icon-home.jpg'>
+            </div>
+            <div class='col-xs-8' id='direction'>
+              Av. San Martin, Colinas de Bello Monte, St. Miranda.
+            </div>
+          </div>
+          <div class='row' id='account'>
+            <div class='col-xs-9'>
+              <img src='static/images/icon-user.jpg'>
+              <span>Manuel Smith</span>
+            </div>
+            <div class='col-xs-3' id='icon-set'>
+              <i class='fa fa-cogs'></i>
+            </div>
+          </div>
+        </div>
+        <ul>
           <li>
-            <a class='a-menu' href='#'>notifications</a>
+            <a class='a-menu' href='#'>
+              <i class='fa fa-bell'></i>
+              <span class='title'>notifications</span>
+            </a>
           </li>
           <li>
-            <a class='a-menu' href='#'>statistics</a>
+            <a class='a-menu' href='#'>
+              <i class='fa fa-line-chart'></i>
+              <span class='title'>statistics</span>
+            </a>
           </li>
           <li>
-            <a class='a-menu' href='#'>water</a>
+            <a class='a-menu' href='#'>
+              <i class='fa fa-tint'></i>
+              <span class='title'>water</span>
+            </a>
           </li>
           <li>
-            <a class='a-menu' href='#'>light</a>
+            <a class='a-menu' href='#'>
+              <i class='fa fa-lightbulb-o'></i>
+              <span class='title'>light</span>
+            </a>
           </li>
           <li>
-            <a class='a-menu' href='#'>schedules</a>
+            <a class='a-menu' href='#'>
+              <i class='fa fa-clock-o'></i>
+              <span class='title'>schedules</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -44,5 +81,5 @@
   </body>
   <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.js"></script>
   <script src="static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script type="text/javascript" src="static/js/sidebar.js"></script>
+  <script type="text/javascript" src="static/js/navbar.js"></script>
 </html>

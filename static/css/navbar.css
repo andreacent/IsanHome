@@ -22,6 +22,7 @@
 /* Save btn color */
 /* Red */
 /* Delete btn color */
+/*menu head color*/
 /* Font size  */
 /*shadows */
 /*main menu*/
@@ -29,7 +30,7 @@
 header {
   width: 100%;
   background: #fff;
-  z-index: 2000;
+  z-index: 1000;
   margin: 0px;
   padding: 0px;
   font-family: "Futura", sans-serif;
@@ -40,52 +41,100 @@ header {
   -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75); }
-  header #menu-head {
+  header #menu-bar {
+    padding: 10px 0px 10px 0px;
     display: block;
     width: 100%;
     text-align: center;
-    z-index: 2000;
-    background-color: #D6D6D6; }
-    header #menu-head a.bt-menu {
-      display: block;
-      padding: 4px;
-      text-decoration: none;
-      font-size: 20px; }
-    header #menu-head a.bt-menu:hover {
-      color: #1F1F1F; }
-    header #menu-head #icon-navicon {
+    background-color: #547BC6;
+    position: fixed;
+    color: #fff; }
+    header #menu-bar #icon-navicon, header #menu-bar #icon-home-view {
+      padding-left: 10px;
       float: left;
-      margin-top: 3px;
-      font-size: 20px; }
+      font-size: 20px;
+      cursor: pointer; }
+      header #menu-bar #icon-navicon:hover, header #menu-bar #icon-home-view:hover {
+        color: #1F1F1F; }
+    header #menu-bar #icon-home-view {
+      float: right;
+      padding-right: 10px; }
+    header #menu-bar .title {
+      color: #1F1F1F; }
   header nav#main-menu {
-    width: 60%;
     height: 100%;
     left: -100%;
     margin: 0;
-    z-index: 1000;
+    z-index: 1500;
     position: fixed;
+    width: 90%;
     background-color: #547BC6; }
+    header nav#main-menu #menu-head {
+      background-color: #F6F6F6;
+      color: #1F1F1F;
+      text-align: left;
+      text-transform: none; }
+      header nav#main-menu #menu-head #icon-close-menu {
+        padding: 10px;
+        padding-top: 6px;
+        cursor: pointer; }
+        header nav#main-menu #menu-head #icon-close-menu i {
+          float: right;
+          font-size: 20px; }
+      header nav#main-menu #menu-head #house-direction {
+        width: 90%;
+        margin: auto; }
+        header nav#main-menu #menu-head #house-direction img {
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          width: 70px;
+          display: inline-block;
+          -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75); }
+        header nav#main-menu #menu-head #house-direction #direction {
+          color: #547BC6;
+          font-size: 13px;
+          vertical-align: middle; }
+      header nav#main-menu #menu-head #account {
+        width: 98%;
+        margin: auto;
+        padding-bottom: 4px;
+        padding-top: 12px; }
+        header nav#main-menu #menu-head #account #icon-set {
+          text-align: right;
+          padding-top: 10px; }
+          header nav#main-menu #menu-head #account #icon-set i {
+            font-size: 20px; }
+        header nav#main-menu #menu-head #account img {
+          width: 60px; }
     header nav#main-menu ul {
-      padding: 0px;
-      margin: 0;
+      margin: auto;
       font-size: 16px;
-      padding-left: 16px;
       overflow: hidden;
-      list-style: none; }
+      list-style: none;
+      padding-top: 10px; }
       header nav#main-menu ul li {
         position: relative;
         display: block;
         float: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         text-align: left; }
         header nav#main-menu ul li a.a-menu {
-          min-width: 130px;
-          padding: 6px 10px;
+          padding: 16px 0px 16px 0px;
           display: block;
           text-decoration: none;
           color: #fff; }
+          header nav#main-menu ul li a.a-menu i {
+            font-size: 30px;
+            width: 50px;
+            color: #1F1F1F;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center; }
+          header nav#main-menu ul li a.a-menu span {
+            vertical-align: middle; }
         header nav#main-menu ul li a:hover {
-          color: #1F1F1F;
-          padding: 8px; }
+          color: #1F1F1F; }
 
 /*# sourceMappingURL=navbar.css.map */

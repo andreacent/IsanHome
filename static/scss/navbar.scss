@@ -3,7 +3,7 @@
 header{
     width:100%;
     background:#fff;
-    z-index: 2000;
+    z-index: 1000;
     margin: 0px;
     padding: 0px;
     font-family: $font-family;
@@ -15,63 +15,129 @@ header{
     -moz-box-shadow: $default-shadow;
     box-shadow: $default-shadow;
 
-    #menu-head{
+    #menu-bar{
+        padding:10px 0px 10px 0px;
         display: block;
         width: 100%;
         text-align: center;
-        z-index: 2000;
-        background-color:$manu-head-background;
-
-        a.bt-menu{
-            display: block;
-            padding: 4px;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        a.bt-menu:hover{
-            color:$a-hover-color;
-        }
+        background-color:$menu-bar-background;
+        position: fixed;
+        color:$menu-bar-color;
         #icon-navicon{
+            padding-left:10px;
             float:left;
-            margin-top: 3px;
-            font-size: 20px;
+            font-size: $menu-bar-icon-size;
+            cursor: pointer;
+            &:hover{
+                color:$a-hover-color;
+            }
+        }
+        #icon-home-view{
+            @extend #icon-navicon;
+            float:right;
+            padding-right:10px;
+        }
+        .title{
+            color: $dark-gray;
         }
     }
 
     nav#main-menu{
-        width:60%;
         height:100%;
         left:-100%;
         margin:0;
-        z-index: 1000;
+        z-index: 1500;
         position: fixed;
+        width:$menu-with;
         background-color:$menu-background;
 
+        #menu-head{
+            background-color: $menu-head-background;
+            color: $menu-head-color;
+            text-align:left;
+            text-transform: none;
+
+            #icon-close-menu{
+                padding:10px;
+                padding-top:6px;
+                cursor:pointer;
+                i{
+                    float: right;
+                    font-size: $menu-head-icon-size;
+                }
+            }
+            #house-direction{
+                width: 90%;
+                margin: auto;
+                img{
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    width: 70px;
+                    display: inline-block;
+                    -webkit-box-shadow: $default-shadow;
+                    -moz-box-shadow: $default-shadow;
+                    box-shadow: $default-shadow;
+                }
+                #direction{
+                    color:$main-blue;
+                    font-size: $font-size-h4;
+                    vertical-align: middle;
+                }
+            }
+            #account{
+                width: 98%;
+                margin: auto;
+                padding-bottom:4px;
+                padding-top:12px;
+                #icon-set{
+                    text-align:right;
+                    padding-top:10px;
+                    i{
+                        font-size: $menu-head-icon-size;
+                    }
+                }
+                img{
+                    width: 60px;
+                }
+            }
+        }
+
         ul{
-            padding: 0px;
-            margin:0;
-            font-size:16px;
-            padding-left: 16px;
+            margin:auto;
+            font-size:$menu-font-size;
             overflow: hidden;
             list-style:none;
+            padding-top:10px;
 
             li{
                 position: relative;
                 display:block;
                 float:none;
-                border-bottom: 1px solid rgba(0,0,0,.1);
                 text-align: left;
 
                 a.a-menu{
-                    min-width: 130px;
-                    padding: 6px 10px;
+                    padding: 16px 0px 16px 0px;
                     display:block;
                     text-decoration:none;
-                    color: $menu-color-font;
+                    color: $menu-color;
+                    i{
+                        font-size: $menu-icons-size;
+                        width: 50px;
+                        color:$dark-gray;
+                        display: inline-block;
+                        vertical-align: middle;
+                        text-align: center;
+                        //&:hover{
+                        //    color:#fff;
+                        //}
+                    }
+                    span{
+                        vertical-align: middle;
+                    }
                 }
                 a:hover{
                     color:$a-hover-color;
-                    padding:8px;
                 }
             }
         }
