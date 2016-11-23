@@ -27,6 +27,7 @@ $main-blue: #547BC6;
 
 /* Gray */
 $gray0: #CFCDCE;       /* Background box */
+$gray1: #E7E5E6;       /* Background box */
 $dark-gray: #1F1F1F;   /* body color */
 
 /* Green */
@@ -55,7 +56,7 @@ $default-shadow: 0px 4px 5px -4px rgba(0,0,0,0.75);
 /*main menu*/
 $menu-bar-background: $main-blue;
 $menu-bar-color: #fff !default;
-$menu-bar-icon-size:20px;
+$menu-bar-icon-size:24px;
 $menu-bar-font:$panama-font;
 $menu-head-background: $beige;
 $menu-head-color: $dark-gray;
@@ -79,10 +80,16 @@ $body-color: $dark-gray;
 $box-color: $dark-gray;
 $box-background: #fff;
 $box-bar-background:$gray0;
+$box-bar-plus-background:$gray1;
 
 /* btn */
 $btn-circle-color: #fff;
 $btn-circle-backgroud: $main-blue;
+
+/* switch */
+$switch-color: #fff;
+$switch-circle-color: $gray0;
+$switch-color-checked: $main-blue;
 
 /* utilities */
 .shadow-default{

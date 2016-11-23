@@ -98,16 +98,50 @@ section{
     }
 }
 
-#notifications .main-box{    
-    .btn-circle-icon{
-        position:relative;
-        top:80px;
-        left: 3px;
-    }
-    .box-content{
-        margin-top: -36px;
+#notifications{
+    .main-box{    
+        .btn-circle-icon{
+            position:relative;
+            top:80px;
+            left: 3px;
+        }
+        .box-content{
+            margin-top: -36px;
+        }
     }
 }
 
-#statistics{
+#schedules{
+    width: 100%;
+    padding-top:0px;
+    .box-bar{
+        padding: 6px 0 6px 0;
+        margin-bottom: 2px;
+        background-color:$box-bar-background;
+        .row{
+            width: 90%;
+            margin: auto;
+            h1{
+                margin:0px;
+            }
+            .time-name{
+                font-size: $font-size-h4;
+            }
+            .switch-col{
+                padding-top:7px;
+                text-align: right;
+            }
+        }
+    }
+    .box-bar-plus{
+        height: 62.5px;
+        background-color:$box-bar-plus-background;
+        text-align: center;
+        i{  
+            margin-top: 14px;
+            font-size: $menu-icons-size;
+            color: $main-blue;
+            cursor: pointer;
+        }
+    }
 }

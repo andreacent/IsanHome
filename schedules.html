@@ -13,6 +13,8 @@
     <link href="static/bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="static/css/main.css" />
     <link rel="stylesheet" href="static/css/navbar.css" />
+    <!-- switch -->
+    <link rel="stylesheet" href="static/css/switch.css" />
   </head>
   <body>
     <header id='navbar'>
@@ -83,43 +85,85 @@
         </ul>
       </nav>
     </header>
-    <section id='notifications'>
-      <div class='main-box'>
-        <div class='btn-circle-icon'>
-          <i class='fa fa-lightbulb-o'></i>
-        </div>
-        <div class='box-content'>
-          <p class='big-info'>9000 watts</p>
-        </div>
-        <div class='box-bar-bottom'>
-          <p>daily electrical consumption</p>
-        </div>
-      </div>
-      <div class='main-box'>
-        <div class='btn-circle-icon'>
-          <i class='fa fa-tint'></i>
-        </div>
-        <div class='box-content'>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Sed lacinia odio nec luctus rhoncus.</li>
-            <li>Suspendisse non metus quis lorem maximus porta</li>
-          </ul>
-        </div>
-        <div class='box-bar-bottom'>
-          <p>leaking taps</p>
+    <section id='schedules'>
+      <div class='box-bar'>
+        <div class='row'>
+          <div class='col-xs-7'>
+            <h1>
+              7:30am
+            </h1>
+            <div class='time-name'>
+              Inicio-Ciclo Cafetera
+            </div>
+          </div>
+          <div class='col-xs-5 switch-col'>
+            <label class='switch'>
+              <input checked type='checkbox'>
+                <div class='slider round'></div>
+              </input>
+            </label>
+          </div>
         </div>
       </div>
-      <div class='main-box'>
-        <div class='btn-circle-icon'>
-          <i class='fa fa-tint'></i>
+      <div class='box-bar'>
+        <div class='row'>
+          <div class='col-xs-7'>
+            <h1>
+              8:00am
+            </h1>
+            <div class='time-name'>
+              Encender-Tv-Sala
+            </div>
+          </div>
+          <div class='col-xs-5 switch-col'>
+            <label class='switch'>
+              <input checked type='checkbox'>
+                <div class='slider round'></div>
+              </input>
+            </label>
+          </div>
         </div>
-        <div class='box-content'>
-          <p class='big-info'>1:42:12</p>
+      </div>
+      <div class='box-bar'>
+        <div class='row'>
+          <div class='col-xs-7'>
+            <h1>
+              9:00am
+            </h1>
+            <div class='time-name'>
+              Apagar-Tv-Sala
+            </div>
+          </div>
+          <div class='col-xs-5 switch-col'>
+            <label class='switch'>
+              <input type='checkbox'>
+                <div class='slider round'></div>
+              </input>
+            </label>
+          </div>
         </div>
-        <div class='box-bar-bottom'>
-          <p>past time</p>
+      </div>
+      <div class='box-bar'>
+        <div class='row'>
+          <div class='col-xs-7'>
+            <h1>
+              5:00pm
+            </h1>
+            <div class='time-name'>
+              Encender-AC-Sala
+            </div>
+          </div>
+          <div class='col-xs-5 switch-col'>
+            <label class='switch'>
+              <input checked type='checkbox'>
+                <div class='slider round'></div>
+              </input>
+            </label>
+          </div>
         </div>
+      </div>
+      <div class='box-bar-plus'>
+        <i class='fa fa-plus'></i>
       </div>
     </section>
   </body>

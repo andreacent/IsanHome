@@ -18,7 +18,10 @@ header{
         background-color:$menu-bar-background;
         position: fixed;
         color:$menu-bar-color;
+        height: 40.5px;
+        overflow: hidden;
         #icon-navicon{
+            margin-top: -2px;
             padding-left:10px;
             float:left;
             font-size: $menu-bar-icon-size;
