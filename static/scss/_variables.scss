@@ -91,13 +91,20 @@ $switch-color: #fff;
 $switch-circle-color: $gray0;
 $switch-color-checked: $main-blue;
 
+/*footer */
+$footer-bar-background-color: $main-blue;
+$footer-bar-color: #fff;
+$footer-bar-icon-size: 22px;
+
+
+
 /* utilities */
 .shadow-default{
-	-webkit-box-shadow: $default-shadow;
+    -webkit-box-shadow: $default-shadow;
     -moz-box-shadow: $default-shadow;
     box-shadow: $default-shadow;
 }
-.box-circle{	
+.box-circle{    
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
