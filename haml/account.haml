@@ -18,7 +18,7 @@
   %body
     %header#navbar
       #menu-bar
-        %span.title Notifications
+        %span.title Account
         %i.fa.fa-bars#icon-navicon
         %i.fa.fa-home#icon-home-view
       %nav#main-menu
@@ -38,56 +38,35 @@
               %img{:src => "static/images/icon-user.jpg"}/ 
               %span Manuel Smith
             .col-xs-3#icon-set
-              %i.fa.fa-cogs
+              %a{:href => "account.html"}
+                %i.fa.fa-cogs
         %ul
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "notifications.html"}
               %i.fa.fa-bell
               %span notifications
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "statistics.html"}
               %i.fa.fa-line-chart
               %span statistics
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "water.html"}
               %i.fa.fa-tint
               %span water
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "light.html"}
               %i.fa.fa-lightbulb-o
               %span light
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "schedules.html"}
               %i.fa.fa-clock-o
               %span schedules
 
-    %section#notifications
-      .main-box
-        .btn-circle-icon
-          %i.fa.fa-lightbulb-o
-        .box-content
-          %p.big-info 9000 watts
-        .box-bar-bottom
-          %p daily electrical consumption
+    %section#account
 
-      .main-box
-        .btn-circle-icon
-          %i.fa.fa-tint
-        .box-content
-          %ul
-            %li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            %li Sed lacinia odio nec luctus rhoncus.
-            %li Suspendisse non metus quis lorem maximus porta
-        .box-bar-bottom
-          %p leaking taps
-
-      .main-box
-        .btn-circle-icon
-          %i.fa.fa-tint
-        .box-content
-          %p.big-info 1:42:12 
-        .box-bar-bottom
-          %p past time
+    %footer#footnav-account
+      %img{:src => "static/images/icon-home.jpg"}/
+      %img{:src => "static/images/icon-home.jpg"}/
           
 
 

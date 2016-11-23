@@ -51,7 +51,8 @@ $font-family: "Futura",sans-serif;
 $panama-font: "Panama",sans-serif;
 
 /*shadows */
-$default-shadow: 0px 4px 5px -4px rgba(0,0,0,0.75);
+$shadow-color: rgba(0,0,0,0.75);
+$default-shadow: 0px 4px 5px -4px $shadow-color;
 
 /*main menu*/
 $menu-bar-background: $main-blue;
@@ -95,17 +96,25 @@ $switch-color-checked: $main-blue;
 $footer-bar-background-color: $main-blue;
 $footer-bar-color: #fff;
 $footer-bar-icon-size: 22px;
+/* footer account */
+$footnav-background-color:$dark-gray;
 
 
-
-/* utilities */
-.shadow-default{
-    -webkit-box-shadow: $default-shadow;
-    -moz-box-shadow: $default-shadow;
-    box-shadow: $default-shadow;
+/* utilities | mixins */
+@mixin box-shadow($shadow){
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
 }
-.box-circle{    
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
+@mixin border-radius($radius){    
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+.shadow-default{
+    @include box-shadow($default-shadow);
+}
+.box-circle{ 
+    @include border-radius(50%);  
 }

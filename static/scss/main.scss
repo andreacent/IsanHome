@@ -148,22 +148,34 @@ section{
     }
 }
 
-#footer-bar{
-    background-color: $footer-bar-background-color;
-    color: $footer-bar-color;
+footer{
     position:absolute;
     bottom: 0;
-    width: 100%;
-    text-align: center;
     padding:8px 10px 8px 10px;
-    font-size: $font-size-h3;
-    i{
-        font-size: $footer-bar-icon-size;
+    width: 100%;
+
+    &#footer-bar{
+        background-color: $footer-bar-background-color;
+        color: $footer-bar-color;
+        text-align: center;
+        font-size: $font-size-h3;
+        i{
+            font-size: $footer-bar-icon-size;
+        }
+        .foot-col{        
+            cursor:pointer;
+        }
+        .foot-col:hover{
+            color:$hover-color;
+        }
     }
-    .foot-col{        
-        cursor:pointer;
-    }
-    .foot-col:hover{
-        color:$hover-color;
+
+    &#footnav-account{
+        background-color: $footnav-background-color;
+        img{
+            @extend .box-circle;
+            width: 70px;
+            margin-right: 10px;
+        }
     }
 }

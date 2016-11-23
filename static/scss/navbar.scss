@@ -41,6 +41,7 @@ header{
     }
 
     nav#main-menu{
+        @include box-shadow(4px 0px 5px -4px $shadow-color);
         height:100%;
         left:-100%;
         margin:0;
@@ -91,6 +92,12 @@ header{
                     padding-top:10px;
                     i{
                         font-size: $menu-head-icon-size;
+                    }
+                    a{
+                        color: $menu-head-color;
+                    }
+                    a:hover{
+                        color:$main-blue;
                     }
                 }
                 img{
