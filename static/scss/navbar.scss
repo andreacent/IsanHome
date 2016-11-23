@@ -2,15 +2,13 @@
 @import 'texts';
 /*HEADER*/
 header{
+    @extend .shadow-default;
     margin: 0px;
     margin-top: -40.5px;
     width:100%;
     z-index: 1000;
     padding: 0px;
     position: fixed;
-    -webkit-box-shadow: $default-shadow;
-    -moz-box-shadow: $default-shadow;
-    box-shadow: $default-shadow;
 
     #menu-bar{
         padding:10px 0px 10px 0px;
@@ -65,23 +63,23 @@ header{
                 }
             }
             #house-direction{
-                width: 90%;
+                width: 94%;
                 margin: auto;
                 img{
-                    border-radius: 50%;
-                    -webkit-border-radius: 50%;
-                    -moz-border-radius: 50%;
+                    @extend .box-circle;
                     width: 70px;
                     display: inline-block;
                 }
-                #direction{
-                    color:$main-blue;
-                    font-size: $font-size-h4;
+                #house-info{
                     vertical-align: middle;
+                    #direction{
+                        color:$main-blue;
+                        font-size: $font-size-h5;
+                    }
                 }
             }
             #account{
-                width: 98%;
+                width: 99%;
                 margin: auto;
                 padding-bottom:4px;
                 padding-top:12px;

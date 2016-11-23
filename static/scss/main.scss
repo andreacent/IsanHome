@@ -42,6 +42,25 @@ body{
 
 /*****************************************************/
 
+.btn-circle-icon{
+    @extend .box-circle;
+    @extend .shadow-default;
+    width: 36px;
+    height: 36px;
+    background-color: $btn-circle-backgroud;
+    font-size: $menu-icons-size;
+    i{
+        padding-left: 9px;
+        padding-top: 3px;
+    }
+    a{
+        color: $btn-circle-color;
+    }
+    a:hover{
+        color: $hover-color;
+    }
+}
+
 /* Sections */
 section{
     padding-top:10px;
@@ -52,7 +71,7 @@ section{
     margin: auto;
     margin-bottom: 10px;
     color:$box-color;
-
+    
     .box-content{
         background-color: $box-background;
         height: 100px;
@@ -77,4 +96,18 @@ section{
             padding:6px 0px 6px 0px;
         }
     }
+}
+
+#notifications .main-box{    
+    .btn-circle-icon{
+        position:relative;
+        top:80px;
+        left: 3px;
+    }
+    .box-content{
+        margin-top: -36px;
+    }
+}
+
+#statistics{
 }

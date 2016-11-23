@@ -18,7 +18,7 @@
   %body
     %header#navbar
       #menu-bar
-        %span.title Notifications
+        %span.title Statistics
         %i.fa.fa-bars#icon-navicon
         %i.fa.fa-home#icon-home-view
       %nav#main-menu
@@ -41,56 +41,51 @@
               %i.fa.fa-cogs
         %ul
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "notifications.html"}
               %i.fa.fa-bell
               %span notifications
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "statistics.html"}
               %i.fa.fa-line-chart
               %span statistics
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "water.html"}
               %i.fa.fa-tint
               %span water
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "light.html"}
               %i.fa.fa-lightbulb-o
               %span light
           %li
-            %a.a-menu{:href => "#"}
+            %a.a-menu{:href => "schedules.html"}
               %i.fa.fa-clock-o
               %span schedules
 
-    %section#notifications
+    %section#statistics
       .main-box
-        .btn-circle-icon
-          %i.fa.fa-lightbulb-o
         .box-content
-          %p.big-info 9000 watts
+          #curvecharts
         .box-bar-bottom
-          %p daily electrical consumption
+          %p consumo del mes
 
       .main-box
-        .btn-circle-icon
-          %i.fa.fa-tint
         .box-content
-          %ul
-            %li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            %li Sed lacinia odio nec luctus rhoncus.
-            %li Suspendisse non metus quis lorem maximus porta
+          #columnchart
         .box-bar-bottom
-          %p leaking taps
+          %p horas de mayor consumo
 
       .main-box
-        .btn-circle-icon
-          %i.fa.fa-tint
         .box-content
-          %p.big-info 1:42:12 
+          #piechart
         .box-bar-bottom
-          %p past time
+          %p distribución de consumos
           
 
 
   <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="static/js/navbar.js"></script>
+
+  // CHARTS
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="static/js/charts.js"></script>
