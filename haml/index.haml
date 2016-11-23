@@ -1,0 +1,39 @@
+!!! 5
+%html{:lang => "en"}
+    %head
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Isan Home App">
+        <meta name="author" content="Isaac Gonzalez and Andrea Centeno">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        %title
+            IsanHome
+
+        <link href="static/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="static/bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="static/css/navbar.css" />
+
+    %body
+        %header
+            #menu-head
+                %a.bt-menu{:href => "#"}
+                    menu
+                    %i.fa.fa-bars#icon-navicon
+            %nav#main-menu
+                %ul#menu
+                    %li
+                        %a.a-menu{:href => "#"}notifications
+                    %li
+                        %a.a-menu{:href => "#"}statistics
+                    %li
+                        %a.a-menu{:href => "#"}water
+                    %li
+                        %a.a-menu{:href => "#"}light
+                    %li
+                        %a.a-menu{:href => "#"}schedules
+
+            
+    <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.js"></script>
+    <script src="static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="static/js/sidebar.js"></script>

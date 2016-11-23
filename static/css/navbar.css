@@ -1,0 +1,91 @@
+/* TYPOGRAPHY */
+@import url(https://fonts.googleapis.com/css?family=Rouge+Script);
+@font-face {
+  font-family: Panama;
+  src: url(fonts/Panama-Light.otf); }
+@font-face {
+  font-family: Futura;
+  src: url(fonts/FuturaLT-Light.ttf); }
+@font-face {
+  font-family: FuturaBold;
+  src: url(fonts/FuturaLT-Heavy.ttf); }
+/******* VARIABLES *******/
+/* Color Palette */
+/* Blue */
+/* Top-bar and submit btn color */
+/* Slim bar blue */
+/* Gray */
+/* Background content color */
+/* Inputs color */
+/* Input labels color */
+/* Green */
+/* Save btn color */
+/* Red */
+/* Delete btn color */
+/* Font size  */
+/*shadows */
+/*main menu*/
+/*HEADER*/
+header {
+  width: 100%;
+  background: #fff;
+  z-index: 2000;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Futura", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.75); }
+  header #menu-head {
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 2000;
+    background-color: #D6D6D6; }
+    header #menu-head a.bt-menu {
+      display: block;
+      padding: 4px;
+      text-decoration: none;
+      font-size: 20px; }
+    header #menu-head a.bt-menu:hover {
+      color: #1F1F1F; }
+    header #menu-head #icon-navicon {
+      float: left;
+      margin-top: 3px;
+      font-size: 20px; }
+  header nav#main-menu {
+    width: 60%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: #547BC6; }
+    header nav#main-menu ul {
+      padding: 0px;
+      margin: 0;
+      font-size: 16px;
+      padding-left: 16px;
+      overflow: hidden;
+      list-style: none; }
+      header nav#main-menu ul li {
+        position: relative;
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: left; }
+        header nav#main-menu ul li a.a-menu {
+          min-width: 130px;
+          padding: 6px 10px;
+          display: block;
+          text-decoration: none;
+          color: #fff; }
+        header nav#main-menu ul li a:hover {
+          color: #1F1F1F;
+          padding: 8px; }
+
+/*# sourceMappingURL=navbar.css.map */

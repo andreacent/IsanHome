@@ -1,0 +1,63 @@
+/* TYPOGRAPHY */
+@import url(https://fonts.googleapis.com/css?family=Rouge+Script);
+
+@font-face{
+    font-family: Panama;
+    src:url(fonts/Panama-Light.otf);
+}
+
+@font-face{
+    font-family: Futura;
+    src:url(fonts/FuturaLT-Light.ttf);
+}
+
+@font-face{    
+    font-family: FuturaBold;
+    src:url(fonts/FuturaLT-Heavy.ttf);
+}
+/******* VARIABLES *******/
+
+/* Color Palette */
+
+/* Blue */
+$blue0: #00458a;     /* Top-bar and submit btn color */
+$blue1: #406386;     /* Slim bar blue */
+$blue2: #0045af; 
+$main-blue: #547BC6;
+
+/* Gray */
+$gray0: #eee;        /* Background content color */
+$gray1: #b9b9b9;     /* Inputs color */
+$gray2: #757575;     /* Input labels color */
+$gray3: #777; 
+$dark-gray: #1F1F1F;
+
+/* Green */
+$green0: #6c9a72;    /* Save btn color */
+$green1: #5cb85c;    
+
+/* Red */
+$red0: #e60120;      /* Delete btn color */
+$red1: #fe0123;
+
+
+
+/* Font size  */
+$font-size-h1: 28px;
+$font-size-h2: 18px;
+$font-size-h3: 15px;
+$font-size-p: 15px;
+
+$font-family: "Futura",sans-serif;
+$panama-font: "Panama",sans-serif;
+
+/*shadows */
+$default-shadow: 0px 4px 5px -4px rgba(0,0,0,0.75);
+
+/*main menu*/
+$manu-head-background: #D6D6D6;
+$manu-head-color: $dark-gray;
+$menu-background: $main-blue !default;
+$menu-color-font: #fff !default;
+
+$a-hover-color: $dark-gray;
