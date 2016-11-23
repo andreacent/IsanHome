@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="static/css/navbar.css" />
 
   %body
-    %header
+    %header#navbar
       #menu-bar
         %span.title menu
         %i.fa.fa-bars#icon-navicon
         %i.fa.fa-home#icon-home-view
       %nav#main-menu
-        #menu-head 
+        #menu-head
           #icon-close-menu
             %i.fa.fa-times
           .row#house-direction
@@ -36,30 +36,52 @@
               %span Manuel Smith
             .col-xs-3#icon-set
               %i.fa.fa-cogs
-
         %ul
           %li
             %a.a-menu{:href => "#"}
               %i.fa.fa-bell
-              %span.title notifications
+              %span notifications
           %li
             %a.a-menu{:href => "#"}
               %i.fa.fa-line-chart
-              %span.title statistics
+              %span statistics
           %li
             %a.a-menu{:href => "#"}
               %i.fa.fa-tint
-              %span.title water
+              %span water
           %li
             %a.a-menu{:href => "#"}
               %i.fa.fa-lightbulb-o
-              %span.title light
+              %span light
           %li
             %a.a-menu{:href => "#"}
               %i.fa.fa-clock-o
-              %span.title schedules
+              %span schedules
 
-      
-  <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.js"></script>
-  <script src="static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    %section#notifications
+      .main-box
+        .box-content
+          %p.big-info 9000 watts
+        .box-bar-bottom
+          %p daily electrical consumption
+
+      .main-box
+        .box-content
+          %ul
+            %li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            %li Sed lacinia odio nec luctus rhoncus.
+            %li Suspendisse non metus quis lorem maximus porta
+        .box-bar-bottom
+          %p leaking taps
+
+      .main-box
+        .box-content
+          %p.big-info 1:42:12 
+        .box-bar-bottom
+          %p past time
+          
+
+
+  <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="static/js/navbar.js"></script>

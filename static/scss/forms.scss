@@ -1,0 +1,39 @@
+/* Forms */
+.form-control {
+    @extend .p;
+    border-style: none;
+    border-bottom-style: groove;
+    border-radius: 0;
+    box-shadow: inset 0 1px 1px #fff !important;
+}
+
+.form-group {
+    padding: 20px 0 !important;
+    .col-md-2 {
+        margin-right: 18px;
+    }
+    #buttons {
+        margin-top: 15px;
+    }
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #fff;
+    opacity: 1;
+}
+
+/*  */
+#buttons {
+    .form-group{
+        padding: 0px 0px !important;
+        margin: 0px;
+    } 
+    .col-md-12 {
+        margin-top: 18px;
+    }
+}
+
+.buttons-div  {
+    float: right;
+    margin-left: 10px;
+}

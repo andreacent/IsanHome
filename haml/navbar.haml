@@ -1,0 +1,41 @@
+#menu-bar
+  %span.title menu
+  %i.fa.fa-bars#icon-navicon
+  %i.fa.fa-home#icon-home-view
+%nav#main-menu
+  #menu-head 
+    #icon-close-menu
+      %i.fa.fa-times
+    .row#house-direction
+      .col-xs-4
+        %img{:src => "static/images/icon-home.jpg"}/
+      .col-xs-8#direction
+        Av. San Martin, Colinas de Bello Monte, St. Miranda.
+    .row#account
+      .col-xs-9
+        %img{:src => "static/images/icon-user.jpg"}/ 
+        %span Manuel Smith
+      .col-xs-3#icon-set
+        %i.fa.fa-cogs
+
+  %ul
+    %li
+      %a.a-menu{:href => "#"}
+        %i.fa.fa-bell
+        %span.title notifications
+    %li
+      %a.a-menu{:href => "#"}
+        %i.fa.fa-line-chart
+        %span.title statistics
+    %li
+      %a.a-menu{:href => "#"}
+        %i.fa.fa-tint
+        %span.title water
+    %li
+      %a.a-menu{:href => "#"}
+        %i.fa.fa-lightbulb-o
+        %span.title light
+    %li
+      %a.a-menu{:href => "#"}
+        %i.fa.fa-clock-o
+        %span.title schedules

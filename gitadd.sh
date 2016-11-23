@@ -1,2 +1,2 @@
 #!/bin/sh
-git add static/* *.html haml/*
+git add gitadd.sh static/* *.html haml/* README.md

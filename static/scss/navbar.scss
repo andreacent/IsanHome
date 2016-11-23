@@ -1,16 +1,13 @@
 @import 'variables';
+@import 'texts';
 /*HEADER*/
 header{
-    width:100%;
-    background:#fff;
-    z-index: 1000;
     margin: 0px;
+    margin-top: -40.5px;
+    width:100%;
+    z-index: 1000;
     padding: 0px;
-    font-family: $font-family;
-    text-align: center;
-    font-weight: bold;
     position: fixed;
-    text-transform: uppercase;
     -webkit-box-shadow: $default-shadow;
     -moz-box-shadow: $default-shadow;
     box-shadow: $default-shadow;
@@ -29,7 +26,7 @@ header{
             font-size: $menu-bar-icon-size;
             cursor: pointer;
             &:hover{
-                color:$a-hover-color;
+                color:$hover-color;
             }
         }
         #icon-home-view{
@@ -56,6 +53,7 @@ header{
             color: $menu-head-color;
             text-align:left;
             text-transform: none;
+            font-weight: bold;
 
             #icon-close-menu{
                 padding:10px;
@@ -75,9 +73,6 @@ header{
                     -moz-border-radius: 50%;
                     width: 70px;
                     display: inline-block;
-                    -webkit-box-shadow: $default-shadow;
-                    -moz-box-shadow: $default-shadow;
-                    box-shadow: $default-shadow;
                 }
                 #direction{
                     color:$main-blue;
@@ -133,11 +128,13 @@ header{
                         //}
                     }
                     span{
+                        @extend .title;
+                        font-family: $menu-font;
                         vertical-align: middle;
                     }
                 }
                 a:hover{
-                    color:$a-hover-color;
+                    color:$hover-color;
                 }
             }
         }

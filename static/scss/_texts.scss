@@ -1,0 +1,55 @@
+/******* VARIABLES *******/
+@import 'variables';
+
+/* TITLES */
+
+h1, .h1 {
+    margin-top: 15px;
+    font-size: $font-size-h1;
+}
+
+h2, .h2 {
+    color: $dark-gray;
+    margin-top: 10px;
+    font-size: $font-size-h2;
+}
+
+h3, .h3 {
+    color: $dark-gray;
+    font-size: $font-size-h3;
+}
+
+p, .p {
+    font-size: $font-size-p;
+    //color: $gray0;
+}
+
+.main-title {
+    font-weight: bold;
+    color: $dark-gray;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: $panama-font;
+    font-size: $font-size-h2;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* TEXT COLORS */
+
+.text-blue {
+    color: $main-blue;
+}
+
+.text-gray {
+    color: $dark-gray;
+}
+
+.text-white {
+    color: white;
+}

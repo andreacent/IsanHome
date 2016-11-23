@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="static/css/navbar.css" />
   </head>
   <body>
-    <header>
+    <header id='navbar'>
       <div id='menu-bar'>
         <span class='title'>menu</span>
         <i class='fa fa-bars' id='icon-navicon'></i>
@@ -48,38 +48,68 @@
           <li>
             <a class='a-menu' href='#'>
               <i class='fa fa-bell'></i>
-              <span class='title'>notifications</span>
+              <span>notifications</span>
             </a>
           </li>
           <li>
             <a class='a-menu' href='#'>
               <i class='fa fa-line-chart'></i>
-              <span class='title'>statistics</span>
+              <span>statistics</span>
             </a>
           </li>
           <li>
             <a class='a-menu' href='#'>
               <i class='fa fa-tint'></i>
-              <span class='title'>water</span>
+              <span>water</span>
             </a>
           </li>
           <li>
             <a class='a-menu' href='#'>
               <i class='fa fa-lightbulb-o'></i>
-              <span class='title'>light</span>
+              <span>light</span>
             </a>
           </li>
           <li>
             <a class='a-menu' href='#'>
               <i class='fa fa-clock-o'></i>
-              <span class='title'>schedules</span>
+              <span>schedules</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
+    <section id='notifications'>
+      <div class='main-box'>
+        <div class='box-content'>
+          <p class='big-info'>9000 watts</p>
+        </div>
+        <div class='box-bar-bottom'>
+          <p>daily electrical consumption</p>
+        </div>
+      </div>
+      <div class='main-box'>
+        <div class='box-content'>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Sed lacinia odio nec luctus rhoncus.</li>
+            <li>Suspendisse non metus quis lorem maximus porta</li>
+          </ul>
+        </div>
+        <div class='box-bar-bottom'>
+          <p>leaking taps</p>
+        </div>
+      </div>
+      <div class='main-box'>
+        <div class='box-content'>
+          <p class='big-info'>1:42:12</p>
+        </div>
+        <div class='box-bar-bottom'>
+          <p>past time</p>
+        </div>
+      </div>
+    </section>
   </body>
-  <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.js"></script>
-  <script src="static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="static/js/navbar.js"></script>
 </html>
