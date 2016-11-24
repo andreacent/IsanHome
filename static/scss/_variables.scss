@@ -83,6 +83,12 @@ $box-background: #fff;
 $box-bar-background:$gray0;
 $box-bar-plus-background:$gray1;
 
+/*box-bar account */
+$box-bar-acc-background:$main-blue;
+$box-bar-acc-color: #fff;
+$box-acc-background: $gray0;
+$box-acc-color:$dark-gray;
+
 /* btn */
 $btn-circle-color: #fff;
 $btn-circle-backgroud: $main-blue;
@@ -118,3 +124,4 @@ $footnav-background-color:$dark-gray;
 .box-circle{ 
     @include border-radius(50%);  
 }
+   

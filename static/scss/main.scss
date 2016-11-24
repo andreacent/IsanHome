@@ -1,5 +1,6 @@
 /******* VARIABLES *******/
 @import 'variables';
+@import 'texts';
 
 label {
     font-size: $font-size-h3;
@@ -38,6 +39,15 @@ body{
     line-height: 1.42857143;
     height: 100%;
     -webkit-transition: max-width .7s ease;
+}
+
+.background-cover{ 
+    background-repeat: no-repeat;
+    background-position: center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /*****************************************************/
@@ -148,10 +158,60 @@ section{
     }
 }
 
+#account{
+    padding-top:2px;
+    #box-account{
+        height: 157.66px;
+        background-color:$box-acc-background;
+        color: $box-acc-color;
+        margin-bottom:2px;
+        #box-account-content{
+            text-align: center;
+            padding-top: 26px;
+            #account-img{
+                @extend .background-cover;
+                background-image: url("../images/icon-user.jpg");
+                display: inline-block;
+                vertical-align: middle;
+                width: 100px;
+                height: 100px;
+            }
+            #account-name{
+                @extend .title;
+                font-size: $font-size-h1;
+                line-height: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: left;
+            }
+        }
+    }
+    .box-bar{
+        height: 62.5px;
+        background-color:$box-bar-acc-background;
+        color: $box-bar-acc-color;
+        padding: 14px 0 0 20px;
+        margin-bottom: 2px;
+        h1{
+            display: inline-block;
+            margin: 0;
+        }
+        i{
+            float: right;
+            font-size: $menu-icons-size;
+            margin-right:20px;
+            weight:bold;
+        }
+        &:hover{
+            color:$hover-color;
+        }
+    }
+}
+
 footer{
     position:absolute;
     bottom: 0;
-    padding:8px 10px 8px 10px;
+    padding:10px 10px 10px 10px;
     width: 100%;
 
     &#footer-bar{
