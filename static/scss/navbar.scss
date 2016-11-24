@@ -48,6 +48,7 @@ header{
         z-index: 1500;
         position: fixed;
         width:$menu-with;
+        max-width: $menu-max-with;
         background-color:$menu-background;
 
         #menu-head{
