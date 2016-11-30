@@ -74,6 +74,40 @@ body{
 /* Sections */
 section{
     padding-top:10px;
+
+    a.go-back{
+        display: block;
+        width: 90%;
+        margin:auto;
+        text-decoration: none;
+        i{
+            font-size: $menu-icons-size;
+            weight:bold;
+            color:$dark-gray;
+        }
+        span{
+            @extend .h2;
+            &:hover{
+                color: $main-blue;
+            }
+        }
+    }
+}
+
+.section-fixed-darck-gray{    
+    background-color:$dark-gray;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+
+    a.go-back{
+        i,span{
+            color:$gray0;
+            &:hover{
+                color: $main-blue;
+            }
+        }
+    }
 }
 
 .main-box{
@@ -207,6 +241,95 @@ section{
         }
     }
 }
+
+#edit-profile,#alarms{
+    @extend .section-fixed-darck-gray;
+
+    form{
+        background-color:$body-background;
+        width: 90%;
+        margin:auto;
+        margin-top: 20px;
+        padding:10px;
+        button{
+            margin-top: 10px;
+            width: 100%;
+            border: none;
+            padding:10px;
+            background-color:$main-blue;
+            color:$gray0;
+            font-size: $font-size-h3;
+        }
+        table{
+            width: 100%;
+            td{
+                padding-bottom: 10px;
+            }
+        }
+        input[type=text],input[type=number],select{    
+            @include border-radius(0);   
+            @include box-shadow(inset 0 1px 1px #fff !important);
+            border-style: none;
+            border: none;
+            border-bottom: 1px solid $gray0;
+            background-color:transparent;
+        }
+        .hour {
+            text-align: center;
+            input,select{
+                width: 80px;
+                display: inline-block;
+            }
+        }
+    }
+    #input-photo{
+        max-width: 200px;
+    }
+}
+
+#apphelp{
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    .info-help{
+        padding-top: 10px;
+        width: 80%;
+        margin:auto;
+        text-align: justify;
+    }
+}
+
+#privacity{
+    @extend .section-fixed-darck-gray;
+    a.go-back{
+        margin-bottom: 20px;
+    }
+    .box-bar{
+        padding: 6px 0 6px 0;
+        margin-bottom: 2px;
+        .row{
+            width: 90%;
+            margin: auto;
+            h3{
+                margin:0px;
+                margin-top: 4px;
+                color: $gray0;
+            }
+            .switch-col{
+                text-align: right;
+                .round-privacity{
+                    height: 23px;
+                    width: 50px;
+                    &::before{
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 footer{
     position:absolute;

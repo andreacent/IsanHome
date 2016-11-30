@@ -18,7 +18,7 @@
   %body
     %header#navbar
       #menu-bar
-        %span.title Account
+        %span.title Edit Profile
         %i.fa.fa-bars#icon-navicon
         %i.fa.fa-home#icon-home-view
       %nav#main-menu
@@ -62,31 +62,36 @@
               %i.fa.fa-clock-o
               %span schedules
 
-    %section#account
-      #box-account
-        #box-account-content
-          #account-img.box-circle
-          #account-name
-            Manuel 
-            %br Smith
+    %section#alarms
+      %a.go-back{:href => "schedules.html"}
+        %i.fa.fa-angle-left 
+        %span Go back to Schedules
+      %form.form-group
+        %table
+          %tr
+            %td
+              %b Room
+            %td
+              %select.form-control
+                %option Cuarto
+                %option Sala
+                %option Cocina
+          %tr
+            %td
+              %b Device
+            %td
+              %select.form-control
+                %option TV
+                %option Radio
+                %option Air conditioner
+        .hour
+          %input.form-control{:type=>"number",:value=>"8",:max=>"12",:min=>"0"}:
+          %input.form-control{:type=>"number",:value=>"30",:max=>"59",:min=>"0"}
+          %select.form-control
+            %option pm
+            %option am
 
-      %a{:href => "privacity.html"}
-        .box-bar
-          %h1 Privacity
-          %i.fa.fa-angle-right
-      %a{:href => "edit-profile.html"}
-        .box-bar
-          %h1 Edit profile
-          %i.fa.fa-angle-right
-      %a{:href => "apphelp.html"}
-        .box-bar
-          %h1 Help
-          %i.fa.fa-angle-right
-
-
-    %footer#footnav-account
-      %img{:src => "static/images/icon-home.jpg"}/
-      %img{:src => "static/images/icon-home.jpg"}/
+        %button Add
           
 
 

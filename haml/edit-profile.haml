@@ -18,7 +18,7 @@
   %body
     %header#navbar
       #menu-bar
-        %span.title Account
+        %span.title Edit Profile
         %i.fa.fa-bars#icon-navicon
         %i.fa.fa-home#icon-home-view
       %nav#main-menu
@@ -62,31 +62,33 @@
               %i.fa.fa-clock-o
               %span schedules
 
-    %section#account
-      #box-account
-        #box-account-content
-          #account-img.box-circle
-          #account-name
-            Manuel 
-            %br Smith
-
-      %a{:href => "privacity.html"}
-        .box-bar
-          %h1 Privacity
-          %i.fa.fa-angle-right
-      %a{:href => "edit-profile.html"}
-        .box-bar
-          %h1 Edit profile
-          %i.fa.fa-angle-right
-      %a{:href => "apphelp.html"}
-        .box-bar
-          %h1 Help
-          %i.fa.fa-angle-right
-
-
-    %footer#footnav-account
-      %img{:src => "static/images/icon-home.jpg"}/
-      %img{:src => "static/images/icon-home.jpg"}/
+    %section#edit-profile
+      %a.go-back{:href => "account.html"}
+        %i.fa.fa-angle-left 
+        %span Go back to Acount 
+      %form.form-group
+        %table
+          %tr
+            %td
+              %b Firstname:
+            %td 
+              %input.form-control{:type=>"text",:value=>"Manuel"}
+          %tr
+            %td
+              %b Lastname:
+            %td 
+              %input.form-control{:type=>"text",:value=>"Smith"}
+          %tr
+            %td
+              %b Phone number:
+            %td 
+              %input.form-control{:type=>"text",:maxlength=>"11",:value=>"04143456258"}
+          %tr
+            %td
+              %b Perfil image:
+            %td 
+              %input#input-photo{:type=>"file",:accept=>"image/*"}
+        %button Save
           
 
 

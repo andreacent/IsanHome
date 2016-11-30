@@ -17,7 +17,7 @@
   <body>
     <header id='navbar'>
       <div id='menu-bar'>
-        <span class='title'>Account</span>
+        <span class='title'>Edit Profile</span>
         <i class='fa fa-bars' id='icon-navicon'></i>
         <i class='fa fa-home' id='icon-home-view'></i>
       </div>
@@ -85,39 +85,49 @@
         </ul>
       </nav>
     </header>
-    <section id='account'>
-      <div id='box-account'>
-        <div id='box-account-content'>
-          <div class='box-circle' id='account-img'></div>
-          <div id='account-name'>
-            Manuel
-            <br>Smith</br>
-          </div>
-        </div>
-      </div>
-      <a href='privacity.html'>
-        <div class='box-bar'>
-          <h1>Privacity</h1>
-          <i class='fa fa-angle-right'></i>
-        </div>
+    <section id='alarms'>
+      <a class='go-back' href='schedules.html'>
+        <i class='fa fa-angle-left'></i>
+        <span>Go back to Schedules</span>
       </a>
-      <a href='edit-profile.html'>
-        <div class='box-bar'>
-          <h1>Edit profile</h1>
-          <i class='fa fa-angle-right'></i>
+      <form class='form-group'>
+        <table>
+          <tr>
+            <td>
+              <b>Room</b>
+            </td>
+            <td>
+              <select class='form-control'>
+                <option>Cuarto</option>
+                <option>Sala</option>
+                <option>Cocina</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Device</b>
+            </td>
+            <td>
+              <select class='form-control'>
+                <option>TV</option>
+                <option>Radio</option>
+                <option>Air conditioner</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <div class='hour'>
+          <input class='form-control' max='12' min='0' type='number' value='8'>:</input>
+          <input class='form-control' max='59' min='0' type='number' value='30'>
+          <select class='form-control'>
+            <option>pm</option>
+            <option>am</option>
+          </select>
         </div>
-      </a>
-      <a href='apphelp.html'>
-        <div class='box-bar'>
-          <h1>Help</h1>
-          <i class='fa fa-angle-right'></i>
-        </div>
-      </a>
+        <button>Add</button>
+      </form>
     </section>
-    <footer id='footnav-account'>
-      <img src='static/images/icon-home.jpg'>
-      <img src='static/images/icon-home.jpg'>
-    </footer>
   </body>
   <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

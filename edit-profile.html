@@ -17,7 +17,7 @@
   <body>
     <header id='navbar'>
       <div id='menu-bar'>
-        <span class='title'>Account</span>
+        <span class='title'>Edit Profile</span>
         <i class='fa fa-bars' id='icon-navicon'></i>
         <i class='fa fa-home' id='icon-home-view'></i>
       </div>
@@ -85,39 +85,49 @@
         </ul>
       </nav>
     </header>
-    <section id='account'>
-      <div id='box-account'>
-        <div id='box-account-content'>
-          <div class='box-circle' id='account-img'></div>
-          <div id='account-name'>
-            Manuel
-            <br>Smith</br>
-          </div>
-        </div>
-      </div>
-      <a href='privacity.html'>
-        <div class='box-bar'>
-          <h1>Privacity</h1>
-          <i class='fa fa-angle-right'></i>
-        </div>
+    <section id='edit-profile'>
+      <a class='go-back' href='account.html'>
+        <i class='fa fa-angle-left'></i>
+        <span>Go back to Acount</span>
       </a>
-      <a href='edit-profile.html'>
-        <div class='box-bar'>
-          <h1>Edit profile</h1>
-          <i class='fa fa-angle-right'></i>
-        </div>
-      </a>
-      <a href='apphelp.html'>
-        <div class='box-bar'>
-          <h1>Help</h1>
-          <i class='fa fa-angle-right'></i>
-        </div>
-      </a>
+      <form class='form-group'>
+        <table>
+          <tr>
+            <td>
+              <b>Firstname:</b>
+            </td>
+            <td>
+              <input class='form-control' type='text' value='Manuel'>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Lastname:</b>
+            </td>
+            <td>
+              <input class='form-control' type='text' value='Smith'>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Phone number:</b>
+            </td>
+            <td>
+              <input class='form-control' maxlength='11' type='text' value='04143456258'>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Perfil image:</b>
+            </td>
+            <td>
+              <input accept='image/*' id='input-photo' type='file'>
+            </td>
+          </tr>
+        </table>
+        <button>Save</button>
+      </form>
     </section>
-    <footer id='footnav-account'>
-      <img src='static/images/icon-home.jpg'>
-      <img src='static/images/icon-home.jpg'>
-    </footer>
   </body>
   <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

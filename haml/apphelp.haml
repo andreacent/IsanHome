@@ -18,7 +18,7 @@
   %body
     %header#navbar
       #menu-bar
-        %span.title Account
+        %span.title Help
         %i.fa.fa-bars#icon-navicon
         %i.fa.fa-home#icon-home-view
       %nav#main-menu
@@ -62,32 +62,14 @@
               %i.fa.fa-clock-o
               %span schedules
 
-    %section#account
-      #box-account
-        #box-account-content
-          #account-img.box-circle
-          #account-name
-            Manuel 
-            %br Smith
-
-      %a{:href => "privacity.html"}
-        .box-bar
-          %h1 Privacity
-          %i.fa.fa-angle-right
-      %a{:href => "edit-profile.html"}
-        .box-bar
-          %h1 Edit profile
-          %i.fa.fa-angle-right
-      %a{:href => "apphelp.html"}
-        .box-bar
-          %h1 Help
-          %i.fa.fa-angle-right
-
-
-    %footer#footnav-account
-      %img{:src => "static/images/icon-home.jpg"}/
-      %img{:src => "static/images/icon-home.jpg"}/
-          
+    %section#apphelp
+      %a.go-back{:href => "account.html"}
+        %i.fa.fa-angle-left 
+        %span Go back to Acount 
+      .info-help
+        In tempor mi id lobortis aliquam. Proin volutpat erat suscipit orci porttitor, sed aliquam est porttitor. Aliquam consequat nisl ut condimentum mollis. Suspendisse potenti. Nulla facilisi. Fusce at consectetur elit. Vivamus tristique sapien at leo vehicula fermentum. Donec eget dui bibendum, commodo nunc id, sodales magna. Nullam facilisis leo nec elit egestas bibendum.
+        %br/
+        %br Nam orci magna, placerat eu fermentum et, pellentesque nec orci. Mauris sem urna, facilisis ut lorem ac, commodo condimentum ex. Morbi elementum nisl enim, vel luctus dolor finibus vitae. Praesent nec finibus metus. Nullam sodales facilisis nisi, sed dictum sapien. Etiam auctor pellentesque odio, vel commodo ante facilisis commodo. Vestibulum est eros, condimentum et efficitur ut, mollis at libero. 
 
 
   <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.min.js"></script>
