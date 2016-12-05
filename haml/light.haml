@@ -20,7 +20,8 @@
       #menu-bar
         %span.title Light
         %i.fa.fa-bars#icon-navicon
-        %i.fa.fa-home#icon-home-view
+        %a{:href => "home.html"}
+          %i.fa.fa-home#icon-home-view
       %nav#main-menu
         #menu-head
           #icon-close-menu
@@ -62,36 +63,17 @@
               %i.fa.fa-clock-o
               %span schedules
 
-    %section
+    %section#light
       .main-box
-        .btn-circle-icon
-          %i.fa.fa-lightbulb-o
-        .box-content
-          %p.big-info 9000 watts
-        .box-bar-bottom
-          %p daily electrical consumption
+        %i#light1.fa.fa-lightbulb-o.lighta
+        %i#light2.fa.fa-lightbulb-o.lightd
+        %i#light3.fa.fa-lightbulb-o.lighta
+        %i#light4.fa.fa-lightbulb-o.lightd
+        %i#light5.fa.fa-lightbulb-o.lighta
 
-      .main-box
-        .btn-circle-icon
-          %i.fa.fa-tint
-        .box-content
-          %ul
-            %li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            %li Sed lacinia odio nec luctus rhoncus.
-            %li Suspendisse non metus quis lorem maximus porta
-        .box-bar-bottom
-          %p leaking taps
-
-      .main-box
-        .btn-circle-icon
-          %i.fa.fa-tint
-        .box-content
-          %p.big-info 1:42:12 
-        .box-bar-bottom
-          %p past time
           
-
 
   <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="static/js/navbar.js"></script>
+  <script type="text/javascript" src="static/js/light.js"></script>

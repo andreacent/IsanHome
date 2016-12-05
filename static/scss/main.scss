@@ -155,6 +155,171 @@ section{
     }
 }
 
+#home{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    .main-box{
+        width: 100%;
+        height: 425px;
+        background-image:url("../images/Home.jpg"); //no-repeat center center fixed;
+        background-size: 100% 100%;
+        color: $main-blue;
+    }
+    #tele{
+        position: fixed;
+        padding: 2em;
+        left: 85%;
+        top: 52%;
+        transform: translateX(-50%);
+        i{
+            display:none;
+        }
+
+    }
+    #lavadora{
+        position: fixed;
+        padding: 2em;
+        left: 44%;
+        top: 81%;
+        transform: translateX(-50%);  
+        i{
+            display:none;
+        } 
+    }
+    .on{
+        color:#3ADF00;
+        position: fixed;
+        padding: 2em;
+        left: 32%;
+        top: -25%;
+        transform: translateX(-50%);
+
+    }
+    .off{
+        color:#DF0101;
+        position: fixed;
+        padding: 2em;
+        left: 72%;
+        top: -25%;
+        transform: translateX(-50%);
+
+    }
+    .program{
+        color: black;
+        position: fixed;
+        padding: 2em;
+        left: 50%;
+        top: -47%;
+        transform: translateX(-50%);
+
+    }
+
+}
+
+#water{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    .main-box{
+        width: 100%;
+        height: 425px;
+        background-image:url("../images/Plano.png"); //no-repeat center center fixed;
+        background-size: 100% 100%;
+
+        .dropa{
+            color: $dropa;
+        }
+        .dropd{
+            color: $dropd;
+        }
+
+        #drop1{
+        position: fixed;
+        padding: 2em;
+        left: 44.5%;
+        top: 30.5%;
+        transform: translateX(-50%);    
+        }
+        #drop2{
+        position: fixed;
+        padding: 2em;
+        left: 49.5%;
+        top: 38%;
+        transform: translateX(-50%);    
+        }
+        #drop3{
+        position: fixed;
+        padding: 2em;
+        left: 67.5%;
+        top: 41%;
+        transform: translateX(-50%);    
+        }
+        #drop4{
+        position: fixed;
+        padding: 2em;
+        left: 46.5%;
+        top: 83%;
+        transform: translateX(-50%);    
+        }
+    }
+}
+
+#light{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    .main-box{
+        width: 100%;
+        height: 425px;
+        background-image:url("../images/Plano.png"); //no-repeat center center fixed;
+        background-size: 100% 100%;
+
+        .lighta{
+            color: $lighta;
+        }
+        .lightd{
+            color: $lightd;
+        }
+
+        #light1{
+        position: fixed;
+        padding: 2em;
+        left: 53%;
+        top: 18%;
+        transform: translateX(-50%);    
+        }
+        #light2{
+        position: fixed;
+        padding: 2em;
+        left: 56%;
+        top: 38%;
+        transform: translateX(-50%);    
+        }
+        #light3{
+        position: fixed;
+        padding: 2em;
+        left: 62%;
+        top: 55%;
+        transform: translateX(-50%);    
+        }
+        #light4{
+        position: fixed;
+        padding: 2em;
+        left: 78%;
+        top: 68%;
+        transform: translateX(-50%);    
+        }
+        #light5{
+        position: fixed;
+        padding: 2em;
+        left: 40%;
+        top: 80%;
+        transform: translateX(-50%);      
+        }
+    }
+}
+
 #schedules{
     width: 100%;
     padding-top:0px;
