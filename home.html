@@ -17,9 +17,11 @@
   <body>
     <header id='navbar'>
       <div id='menu-bar'>
-        <span class='title'>Notifications</span>
+        <span class='title'>Home</span>
         <i class='fa fa-bars' id='icon-navicon'></i>
-        <i class='fa fa-home' id='icon-home-view'></i>
+        <a href='home.html'>
+          <i class='fa fa-home' id='icon-home-view'></i>
+        </a>
       </div>
       <nav id='main-menu'>
         <div id='menu-head'>
@@ -85,53 +87,23 @@
         </ul>
       </nav>
     </header>
-    <section id='notifications'>
+    <section id='home'>
       <div class='main-box'>
-        <div class='btn-circle-icon'>
-          <a href='light.html'>
-            <i class='fa fa-lightbulb-o'></i>
-          </a>
-        </div>
-        <div class='box-content'>
-          <p class='big-info'>9000 watts</p>
-        </div>
-        <div class='box-bar-bottom'>
-          <p>daily electrical consumption</p>
-        </div>
-      </div>
-      <div class='main-box'>
-        <div class='btn-circle-icon'>
-          <a href='water.html'>
-            <i class='fa fa-tint'></i>
-          </a>
-        </div>
-        <div class='box-content'>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Sed lacinia odio nec luctus rhoncus.</li>
-            <li>Suspendisse non metus quis lorem maximus porta</li>
-          </ul>
-        </div>
-        <div class='box-bar-bottom'>
-          <p>leaking taps</p>
-        </div>
-      </div>
-      <div class='main-box'>
-        <div class='btn-circle-icon'>
-          <a href='water.html'>
-            <i class='fa fa-tint'></i>
-          </a>
-        </div>
-        <div class='box-content'>
-          <p class='big-info'>1:42:12</p>
-        </div>
-        <div class='box-bar-bottom'>
-          <p>past time</p>
-        </div>
+        <i class='fa fa-sort menud' id='tele'>
+          <i class='fa fa-power-off on'></i>
+          <i class='fa fa-power-off off'></i>
+          <i class='fa fa-clock-o program'></i>
+        </i>
+        <i class='fa fa-sort menud' id='lavadora'>
+          <i class='fa fa-power-off on'></i>
+          <i class='fa fa-power-off off'></i>
+          <i class='fa fa-clock-o program'></i>
+        </i>
       </div>
     </section>
   </body>
   <script type="text/javascript" src="static/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="static/js/navbar.js"></script>
+  <script type="text/javascript" src="static/js/home.js"></script>
 </html>
